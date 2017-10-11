@@ -58,6 +58,10 @@ export default class MyMap extends React.Component {
     });
   }
 
+  static navigationOptions = {
+    title: 'MyMap',
+  };
+
   render = () => {
     return (
       <View style={styles.container}>
