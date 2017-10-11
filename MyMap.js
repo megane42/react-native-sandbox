@@ -4,7 +4,7 @@ import MapView                                       from 'react-native-maps';
 
 // --------------------------------------------------------------------------------------------------
 
-export default class Main extends Component {
+export default class MyMap extends Component {
 
   constructor(props) {
     super(props);
@@ -62,6 +62,7 @@ export default class Main extends Component {
     return (
       <View style={styles.container}>
 
+        {/*
         // * takeSnapshot() とか animateToRegion() は MapView から生えているので、コードから実行するにはマウントした <MapView /> への参照 (= ref) が必要。
         //     * 最もシンプルなのは、<MapView ref='hoge' ... /> みたいに書いておいて、コードから this.refs.hoge.takeSnapshot() のように参照するパターン。
         //         * よくわからないがこれだと実現できないものがあるので、後述のスタイルが推奨らしい
@@ -70,6 +71,7 @@ export default class Main extends Component {
         //         * 以後、コードでは this.map からこのコンポーネントにアクセスできる
         //         * こういうイディオムだと思っちゃってよさそう
         //         * https://reactjs.org/docs/refs-and-the-dom
+        */}
         <MapView ref={map => { this.map = map }} style={styles.map} />
 
         <TouchableOpacity onPress={this.takeSnapshot} style={styles.snapshot}>

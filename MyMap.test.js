@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './App';
+import App from './MyMap';
 
 import renderer from 'react-test-renderer';
 
