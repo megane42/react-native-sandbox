@@ -1,10 +1,10 @@
-import React, { Component }                          from 'react';
+import React                                         from 'react';
 import { Image, View, StyleSheet, TouchableOpacity } from 'react-native';
 import MapView                                       from 'react-native-maps';
 
 // --------------------------------------------------------------------------------------------------
 
-export default class MyMap extends Component {
+export default class MyMap extends React.Component {
 
   constructor(props) {
     super(props);
