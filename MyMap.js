@@ -58,6 +58,8 @@ export default class MyMap extends React.Component {
     });
   }
 
+  // react-navigation で画面遷移したときに、タイトルとして表示する文字列を設定。
+  // あくまでオプションなので無くてもいいっぽい。
   static navigationOptions = {
     title: 'MyMap',
   };
